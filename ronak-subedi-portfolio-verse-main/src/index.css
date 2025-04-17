@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 33% 98%;
+    --foreground: 240 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 15%;
+
+    --primary: 230 60% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 246 30% 95%;
+    --secondary-foreground: 240 10% 15%;
+
+    --muted: 246 30% 95%;
+    --muted-foreground: 240 5% 45%;
+
+    --accent: 230 60% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 5% 90%;
+    --input: 240 5% 90%;
+    --ring: 230 60% 50%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 240 10% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 230 60% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 10% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 10% 18%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 230 60% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5% 25%;
+    --input: 240 5% 25%;
+    --ring: 230 60% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-raleway font-bold;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent;
+  }
+  
+  .animate-fade-in {
+    @apply opacity-0 translate-y-4 transition duration-700 ease-out;
+  }
+  
+  .animate-fade-in.appear {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-6 md:mb-8 relative inline-block;
+  }
+  
+  .section-title::after {
+    content: "";
+    @apply absolute -bottom-2 left-0 w-1/2 h-1 bg-primary rounded-full;
+  }
+}
