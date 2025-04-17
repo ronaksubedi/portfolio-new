@@ -30,10 +30,10 @@ const Contact = () => {
                 <div>
                   <h4 className="text-sm font-medium text-muted-foreground">Email</h4>
                   <a 
-                    href="mailto:ronak.subedi@example.com" 
+                    href="mailto:ronaksubedi576@gmail.com" 
                     className="text-foreground hover:text-primary transition-colors"
                   >
-                    ronak.subedi@example.com
+                    ronaksubedi576@gmail.com
                   </a>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const Contact = () => {
                     rel="noopener noreferrer" 
                     className="text-foreground hover:text-primary transition-colors"
                   >
-                    @ronaksubedi
+                    @subedi_ronak
                   </a>
                 </div>
               </div>
