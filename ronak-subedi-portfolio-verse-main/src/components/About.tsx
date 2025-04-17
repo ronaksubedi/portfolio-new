@@ -8,13 +8,13 @@ const About = () => {
       <div className="container-custom">
         <SectionHeader 
           title="About Me" 
-          subtitle="I'm a passionate MERN Stack developer focused on creating efficient, user-friendly web applications with modern technologies."
+          subtitle="I'm a passionate Full Stack developer focused on creating efficient, user-friendly web applications with modern technologies."
         />
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="animate-fade-in">
             <p className="text-lg mb-6 text-foreground/90">
-              As a passionate MERN Stack Developer, I thrive on turning complex problems into elegant, intuitive solutions. 
+              As a passionate Full Stack Developer, I thrive on turning complex problems into elegant, intuitive solutions. 
               My journey in web development began with a curiosity about how digital experiences are created, which evolved 
               into a deep expertise in modern JavaScript technologies.
             </p>
