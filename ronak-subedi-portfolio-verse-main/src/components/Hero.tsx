@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="container-custom flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
         <div className="flex-1 animate-fade-in">
           <span className="inline-block text-primary text-sm md:text-base font-medium mb-4 tracking-wider opacity-0 animate-fade-in" style={{ animationDelay: '300ms' }}>
-            MERN STACK DEVELOPER
+            Full STACK DEVELOPER
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-foreground leading-tight opacity-0 animate-fade-in" style={{ animationDelay: '500ms' }}>
             Hi, I'm <span className="text-gradient">Ronak Subedi</span>
