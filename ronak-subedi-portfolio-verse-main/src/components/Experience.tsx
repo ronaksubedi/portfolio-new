@@ -1,4 +1,3 @@
-
 import { Briefcase, Calendar, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -53,37 +52,17 @@ const Experience = () => {
                 {/* Timeline dot */}
                 <div className="absolute left-0 md:left-1/2 top-0 w-5 h-5 rounded-full bg-primary border-4 border-background transform -translate-x-1/2 z-10"></div>
                 
-                {/* Date badge - visible only on mobile */}
-                <div className="md:hidden mb-4 pl-8">
-                  <div className="inline-flex items-center gap-1.5 bg-secondary text-foreground py-1 px-3 rounded-full text-sm">
-                    <Calendar size={14} />
-                    <span>{exp.period}</span>
-                  </div>
-                </div>
-                
-                {/* Date badge - for desktop */}
-                <div className="hidden md:block md:w-1/2 text-right pr-12">
-                  {index % 2 === 0 && (
-                    <div className="inline-flex items-center gap-1.5 bg-secondary text-foreground py-1 px-3 rounded-full text-sm">
-                      <Calendar size={14} />
-                      <span>{exp.period}</span>
-                    </div>
-                  )}
-                </div>
-                
                 {/* Experience card */}
                 <Card className="md:w-1/2 hover-scale group transition-all duration-300 border-primary/10">
                   <CardContent className="p-6">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-2">
                       <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{exp.title}</h3>
                       
-                      {/* Date badge for desktop (alternate layout) */}
-                      {index % 2 !== 0 && (
-                        <div className="hidden md:inline-flex items-center gap-1.5 bg-secondary text-foreground py-1 px-3 rounded-full text-sm">
-                          <Calendar size={14} />
-                          <span>{exp.period}</span>
-                        </div>
-                      )}
+                      {/* Date badge - unified placement */}
+                      <div className="inline-flex items-center gap-1.5 bg-secondary text-foreground py-1 px-3 rounded-full text-sm">
+                        <Calendar size={14} />
+                        <span>{exp.period}</span>
+                      </div>
                     </div>
                     
                     <div className="flex items-center text-muted-foreground mb-4">
@@ -106,6 +85,7 @@ const Experience = () => {
                   </CardContent>
                 </Card>
                 
+                {/* Placeholder for layout balance */}
                 <div className="hidden md:block md:w-1/2"></div>
               </div>
             </div>
